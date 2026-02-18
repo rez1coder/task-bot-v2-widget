@@ -1,0 +1,96 @@
+@font-face {
+	font-family: "Fredoka";
+	src: url("./fonts/Fredoka-Regular.ttf") format("truetype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Fredoka";
+	src: url("./fonts/Fredoka-Bold.ttf") format("truetype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: "Fredoka", Roboto, sans-serif;
+	background: rgba(0, 0, 0, 0);
+}
+
+.task-panel {
+	width: 100%;
+	height: 100vh;
+	background: #141414;
+	border-radius: 12px;
+}
+
+.panel-header {
+	padding: 16px 16px 12px;
+	font-weight: 700;
+	font-size: 14px;
+	color: #fafafa;
+	border-bottom: 1px solid #e0dbd5;
+}
+
+.panel-header span:last-child {
+	font-weight: 600;
+	color: #fafafa;
+	font-size: 13px;
+}
+
+.section {
+	padding: 10px 16px 6px;
+}
+
+.section-title {
+	font-weight: 700;
+	font-size: 13px;
+	color: #fafafa;
+	margin-bottom: 4px;
+}
+
+.task {
+	gap: 6px;
+	padding: 3px 0;
+	font-size: 1.2rem;
+	color: #fafafa;
+	line-height: 1.4;
+	width: fit-content;
+}
+
+.task.done,
+.task.focused.done {
+	text-decoration: line-through;
+	color: #aaa;
+}
+
+.task.focused:not(.done) {
+	background: #ffffff;
+	color: #141414;
+	padding: 2px 4px;
+	border-radius: 4px;
+}
+
+#title {
+	font-size: 1.5rem;
+}
+
+.task-number {
+	flex-shrink: 0;
+	min-width: 16px;
+	text-align: right;
+}
+
+.section {
+	border-top: 1px solid white;
+}
+
+.section:last-child {
+	padding-bottom: 12px;
+}
+
+.section-title {
+	font-size: 1.25rem;
+}

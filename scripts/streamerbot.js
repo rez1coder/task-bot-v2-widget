@@ -1,7 +1,7 @@
 const client = new StreamerbotClient({
-	host: "127.0.0.1",
-	port: 8080,
-	endpoint: "/",
+	host: configs.StreamerBotSettings.host,
+	port: configs.StreamerBotSettings.port,
+	endpoint: configs.StreamerBotSettings.endpoint,
 	onConnect: onConnect,
 	onDisconnect: onDisconnect,
 	onError: onError,
@@ -70,10 +70,8 @@ async function refresh() {
 
 // LOAD TASK LIST
 async function onConnect() {
-	refresh();
-	// TaskList from view.js
 	taskList = new TaskList(".task-panel");
-	taskList.load(sections);
+	refresh();
 }
 
 function transformToSections(users) {

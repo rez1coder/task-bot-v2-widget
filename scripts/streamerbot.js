@@ -89,7 +89,7 @@ function transformToSections(users) {
 // Update task list action by action
 function onCustom(payload) {
 	const data = payload.data;
-	if (!data.source && !data.source === "rython-task-bot") {
+	if (!data.source && data.source != "rython-task-bot") {
 		return;
 	}
 	if (!taskList) return;

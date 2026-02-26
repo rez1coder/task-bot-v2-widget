@@ -1,3 +1,5 @@
+// Task list view
+
 class TaskList {
 	#data = [];
 	#firstRender = true;

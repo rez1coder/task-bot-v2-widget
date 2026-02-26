@@ -1,3 +1,5 @@
+// STREAMER.BOT SETTINGS
+
 const client = new StreamerbotClient({
 	host: configs.StreamerBotSettings.host,
 	port: configs.StreamerBotSettings.port,

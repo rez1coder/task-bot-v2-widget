@@ -4,7 +4,8 @@
    ======================================== */
 :root {
 	/* -- Background & Panel -- */
-	--panel-background: #141414; /* Main background color */
+	--panel-header-background: #141414;
+	--panel-background: #141414c0; /* Main background color */
 	--panel-border-radius: 12px; /* Roundness of panel corners */
 
 	/* -- Text Colors -- */
@@ -68,7 +69,7 @@ body {
 	font-weight: 700;
 	font-size: var(--header-font-size);
 	color: var(--text-color);
-	border-bottom: 1px solid var(--header-border-color);
+	background: var(--panel-header-background);
 }
 
 .panel-header span:last-child {
@@ -79,7 +80,7 @@ body {
 
 .section {
 	padding: var(--section-padding);
-	border-top: 1px solid var(--section-border-color);
+	border-top: 2px solid var(--section-border-color);
 }
 
 .section:last-child {
